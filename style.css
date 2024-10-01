@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width:1200px){
+.Desktop{
+    display: block;
+}
+.Mobile{
+    display: none;
+}
+.Tablet{
+    display: none;
+}
+.mainDesktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 124px;
+    row-gap: 30px;
+}
+.mDesktop{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    column-gap: 14%;
+}
+.infoDesktop{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.image1Desktop{
+    position: relative;
+    height: 330px;
+}
+.image1Desktop>img:first-child{
+position: absolute;
+}
+.image1Desktop>img:last-child{
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    left: -26px;
+}
+.image2Desktop{
+    position: relative;
+    height: 210px;
+}
+.image2Desktop>img:first-child{
+    position: absolute;
+    }
+    
+.image2Desktop>img:last-child{
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    left: 24px;
+}
+.headerDesktop{
+    align-self: flex-start;
+}
+.h1Desktop{
+    font-size: 55px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+.footerDesktop{
+    display: flex;
+    width: 100%;
+    height: 194px;
+    align-items: center;
+}
+.additionalInfoDesktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+    position: absolute;
+    right: 20%;
+    
+}
+.additionalInfoDesktop>div:first-child{
+    width: 67%;
+}
+.additionalInfoDesktop>div:nth-child(2){
+    width: 60%;
+}
+}
+@media only screen and (max-width:1200px){
+    .Desktop{
+        display: none;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet{
+        display: block;
+    }
+    .mainTablet{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 124px;
+        row-gap: 30px;
+    }
+    .mTablet{
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        column-gap: 14%;
+    }
+    .infoTablet{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .image1Tablet{
+        position: relative;
+        height: 187px;
+    }
+    .image1Tablet>img:first-child{
+    position: absolute;
+    height: 165px;
+        width: 164px;
+    }
+    .image1Tablet>img:last-child{
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+        left: -26px;
+        width: 193px;
+        height: 34px;
+    }
+    .hTablet{
+        align-self: flex-start;
+    }
+    .h1Tablet{
+        font-size: 32px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+    }
+    .footerTablet{
+        display: flex;
+        width: 100%;
+        height: 194px;
+        align-items: center;
+    }
+    .additionalInfoTablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 50%;
+        
+    }
+    .additionalInfoTablet>div:first-child{
+        width: 67%;
+    }
+    .additionalInfoTablet>div:nth-child(2){
+        width: 65%;
+    }
+    .additionalInfoTablet h2{
+        font-size: 15px;
+    }
+    .additionalInfoTablet p{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:600px){
+    .Desktop{
+        display: none;
+    }
+    .Tablet{
+        display: none;
+    }
+    .Mobile{
+        display: block;
+    }
+    .mainMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 33px;
+        row-gap: 30px;
+    }
+    .mMobile{
+        display: grid;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        row-gap: 30px;
+    }
+    .infoMobile{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .image1Mobile{
+        align-self: center;
+        position: relative;
+        height: 25vh;
+        left: 5%
+    }
+    .image1Mobile>img:first-child{
+    position: absolute;
+    height: 85%;
+    width: 80%;
+    }
+    .image1Mobile>img:last-child{
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+        left: -26px;
+        width: 95%;
+        height: 20%;
+    }
+    .hMobile{
+        align-self: flex-start;
+    }
+    .h1Mobile{
+        font-size: 26px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+    }
+    .footerMobile{
+        display: flex;
+        width: 100%;
+        height: 194px;
+        align-items: center;
+    }
+    .additionalInfoMobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 70%;
+        
+    }
+    .additionalInfoMobile>div:nth-child(2){
+        width: 65%;
+    }
+    .additionalInfoMobile h2{
+        font-size: 15px;
+    }
+    .additionalInfoMobile p{
+        font-size: 11px;
+    }
+}
